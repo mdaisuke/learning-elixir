@@ -1,4 +1,17 @@
 defmodule Math do
+    @moduledoc """
+    Provides math-related functions.
+
+    ## Examples
+
+        iex> Math.sum(1, 2)
+        3
+
+    """
+
+    @doc """
+    Calculates the sum of two numbers.
+    """
     def sum(a, b) do
         do_sum(a, b)
     end
@@ -28,12 +41,12 @@ defmodule Math do
     end
 end
 
-IO.puts Math.sum(1, 2)
+# IO.puts Math.sum(1, 2)
 # IO.puts Math.do_sum(1, 2)
 
-IO.puts Math.zero?(0)
-IO.puts Math.zero?(1)
-# IO.puts Math.zero?([1,2,3])
+# IO.puts Math.zero?(0)
+# IO.puts Math.zero?(1)
 # IO.puts Math.zero?(0.0)
+# IO.puts Math.zero?([1,2,3])
 
-IO.puts Math.sum_list([1,2,3], 0)
+# IO.puts Math.sum_list([1,2,3], 0)
